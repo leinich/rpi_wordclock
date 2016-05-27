@@ -11,16 +11,16 @@ This is the documentation for rpi_wordclock
     :maxdepth: 2
 
     doc_general_considerations
-    doc_concepts
     doc_hardware_setup
-    doc_how_to_install
+    doc_software_setup
+    doc_further_reading
     doc_troubleshooting
 
 .. _further_doc:
 Further documentation
 +++++++++++++++++++++
 
-Two  youtube videos, which outline the main functionalities and features are available `here <https://www.youtube.com/watch?v=V9TwvranJnY>`_and `here <https://www.youtube.com/watch?v=wcLQDykRBbM>`.
+Two  youtube videos, which outline the main functionalities and features are available `here <https://www.youtube.com/watch?v=V9TwvranJnY>`_ and `here <https://www.youtube.com/watch?v=wcLQDykRBbM>`_.
 
 .. _indices:
 Indices and tables

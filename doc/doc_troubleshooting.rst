@@ -4,7 +4,20 @@ Trouble shooting
 
 Something is not working?
 
+* The command::
+
+    sudo pip install pytz astral feedparser pillow svgwrite freetype-py
+
+  fails to install properly? If so, try to install further dependencies (thanks to SEBatHome)::
+
+    sudo apt-get build-dep python-imaging libjpeg8 libjpeg62-dev libfreetype6 libfreetype6-dev
+
+
 * The leds do not light up as expected?
+
+    * It is important to have common ground for LEDs and RPi. Assure, ground is same for all of them (Thanks to euchkatzl).
+
+    * Assure to connect the LED strip in the right direction. Little arrows indicate that along the strip (Thanks to euchkatzl).
 
     * Assure correct functionality of leds::
 
@@ -23,6 +36,11 @@ Something is not working?
 * When starting the wordclock-script, "Pin 17 pressed" is logged all the time?
 
     To get rid of this message, you first need to finish the wordclock setup by attaching all 3 buttons to it.
+
+    If you aim to run the wordclock without buttons, change the config-file settings as follows::
+
+      [wordclock_interface]
+      type = gpio_high
 
 .. note:: The provided information might be completely unsatifying, leaving you here frustrated and annoyed without a working wordclock... :/
 

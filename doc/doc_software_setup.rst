@@ -1,7 +1,7 @@
 .. _software_installation:
 
-Software installation
-=====================
+Software setup
+==============
 
 Set locales
 +++++++++++
@@ -44,6 +44,20 @@ Required python dependencies:
 To install use::
 
     sudo pip install pytz astral feedparser pillow svgwrite freetype-py
+
+
+.. _temperature_sensor:
+
+(Optional) dependencies to readout temperature sensor
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+To read out an temperature sensor (AM2302), which can additionally be connected to the raspberry via GPIOs, install the according dependencies:
+
+These dependencies are http://www.airspayce.com/mikem/bcm2835/index.html
+
+and::
+
+    sudo pip install am2303_rpi
 
 
 .. _3rd_party_deps_git:
